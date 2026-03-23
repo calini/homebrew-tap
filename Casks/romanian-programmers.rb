@@ -8,4 +8,11 @@ cask "romanian-programmers" do
   homepage "https://github.com/calini/romanian-programmers-macos"
 
   artifact "Romanian - Programmers.bundle", target: "/Library/Keyboard Layouts/Romanian - Programmers.bundle"
+
+  caveats <<~EOS
+    To activate the layout:
+      1. Open System Settings > Keyboard > Input Sources
+      2. Click "+" and search for "Romanian - Programmers"
+      3. Add it and select it from the input menu in the menu bar
+  EOS
 end
