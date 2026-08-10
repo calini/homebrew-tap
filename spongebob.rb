@@ -5,21 +5,21 @@
 class Spongebob < Formula
   desc "CLI for writing SPonGeBob TeXT"
   homepage "https://github.com/calini/spongebob"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/calini/spongebob/releases/download/v0.1.0/spongebob_0.1.0_darwin_amd64.tar.gz"
-      sha256 "a06f0578259d95a6eafb32c4940f26a3b105217d7171afa39f1c2a7bd94ab5cf"
+      url "https://github.com/calini/spongebob/releases/download/v0.2.0/spongebob_0.2.0_darwin_amd64.tar.gz"
+      sha256 "1aa1a7fa9737eccf0b0738c62d69e9b577648c2127cc90858251789953f8b0ca"
 
       define_method(:install) do
         bin.install "spongebob"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/calini/spongebob/releases/download/v0.1.0/spongebob_0.1.0_darwin_arm64.tar.gz"
-      sha256 "abe9c6a0038a2178550f2f371886ca784fbf2a6241de957ca9436f4f3f35d18c"
+      url "https://github.com/calini/spongebob/releases/download/v0.2.0/spongebob_0.2.0_darwin_arm64.tar.gz"
+      sha256 "6c01460da61aec2a755399d86a253e5f3e7ffb9765835d3e7a4049bf306ffbf5"
 
       define_method(:install) do
         bin.install "spongebob"
@@ -29,15 +29,15 @@ class Spongebob < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/calini/spongebob/releases/download/v0.1.0/spongebob_0.1.0_linux_amd64.tar.gz"
-      sha256 "a4191d401c25dc507d9de6ba7349a26002ffecafd2953463d561b77e0eedf60a"
+      url "https://github.com/calini/spongebob/releases/download/v0.2.0/spongebob_0.2.0_linux_amd64.tar.gz"
+      sha256 "ab2d8012203641ba259c52c16ec604de50ea0cf36022b6dfbaad0d5497d12ec8"
       define_method(:install) do
         bin.install "spongebob"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/calini/spongebob/releases/download/v0.1.0/spongebob_0.1.0_linux_arm64.tar.gz"
-      sha256 "80687a87ec421249c57d2b9475ee0269c7f3b85934f3ce26a1b1e5f5b1d3327d"
+      url "https://github.com/calini/spongebob/releases/download/v0.2.0/spongebob_0.2.0_linux_arm64.tar.gz"
+      sha256 "ea39b90474699b536b41cecb2bf9c63ed0a0833eac0b894c8e02e12299ca8685"
       define_method(:install) do
         bin.install "spongebob"
       end
