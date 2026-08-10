@@ -7,13 +7,11 @@ cask "on-air" do
   desc "Menu bar app that toggles a Home Assistant switch while your mic is live"
   homepage "https://github.com/calini/on-air"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "OnAir.app"
 
-  zap trash: [
-    "~/Library/Preferences/io.ilie.onair.plist",
-  ]
+  zap trash: "~/Library/Preferences/io.ilie.onair.plist"
 
   caveats <<~CAVEATS
     On Air is ad-hoc signed, not notarized. On first launch, right-click
